@@ -50,22 +50,23 @@ Herramienta	Descripción	URL
 🧭 Swagger UI	Documentación y prueba de la API	http://localhost:8080/swagger-ui/index.html
 🗄️ Consola H2	Base de datos en memoria	http://localhost:8080/h2-console
 
-Datos de conexión H2:
+## 💾 Datos de conexión H2
 
-less
-Copiar código
+```bash
 JDBC URL: jdbc:h2:mem:productosdb
 Usuario: sa
 Contraseña: (en blanco)
-🌐 Tabla de Endpoints
-Método	Ruta	Descripción
-GET	/api/productos	Lista todos los productos.
-GET	/api/productos/{id}	Obtiene un producto por su ID.
-GET	/api/productos/categoria/{categoria}	Filtra productos por categoría.
-POST	/api/productos	Crea un nuevo producto.
-PUT	/api/productos/{id}	Actualiza un producto completo por ID.
-PATCH	/api/productos/{id}/stock	Actualiza solo el stock de un producto.
-DELETE	/api/productos/{id}	Elimina un producto por ID.
+```
+|   Método   | Ruta                                   | Descripción                             |
+| :--------: | :------------------------------------- | :-------------------------------------- |
+|   **GET**  | `/api/productos`                       | Lista todos los productos.              |
+|   **GET**  | `/api/productos/{id}`                  | Obtiene un producto por su ID.          |
+|   **GET**  | `/api/productos/categoria/{categoria}` | Filtra productos por categoría.         |
+|  **POST**  | `/api/productos`                       | Crea un nuevo producto.                 |
+|   **PUT**  | `/api/productos/{id}`                  | Actualiza un producto completo por ID.  |
+|  **PATCH** | `/api/productos/{id}/stock`            | Actualiza solo el stock de un producto. |
+| **DELETE** | `/api/productos/{id}`                  | Elimina un producto por ID.             |
+
 
 📸 Capturas de Pantalla (Pruebas de la API)
 🟢 Creando un Producto (POST - 201)
